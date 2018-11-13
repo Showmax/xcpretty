@@ -33,7 +33,7 @@ OptionParser.new do |opts|
     printer_opts[:formatter] = XCPretty::Simple
   end
   opts.on('-p', '--pretty', 'Use pretty output (throws out compiling and building logs)') do
-    printer_opts[:formatter] = XCPretty::Knock
+    printer_opts[:formatter] = XCPretty::Pretty
   end
   opts.on('-k', '--knock', 'Use knock output') do
     printer_opts[:formatter] = XCPretty::Knock
